@@ -1,4 +1,4 @@
-# NodeJS + DI + Controller + Service + Repository Example
+# NodeJS + Typescript + DI + Controller + Service + Repository Example
 
 1. Install all dependencies:
 
