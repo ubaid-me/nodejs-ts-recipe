@@ -6,23 +6,23 @@ import {PostRepository} from "../repository/PostRepository";
 @Service()
 export class BaseService {
 
-    constructor(private postRepository: PostRepository) {
+    constructor(private repository: PostRepository) {
     }
 
     findAll() {
-        return this.postRepository.findAll();
+        return this.repository.findAll();
     }
 
     findOne(id: number) {
-        return this.postRepository.findOne(id);
+        return this.repository.findOne(id);
     }
 
     save(post: Post) {
-        return this.postRepository.save(post);
+        return this.repository.save(post);
     }
 
     remove(id: number) {
-        return this.postRepository.remove(id);
+        return this.repository.remove(id);
     }
 
 }
