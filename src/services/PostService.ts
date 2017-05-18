@@ -7,8 +7,8 @@ import {BaseService} from "../services/BaseService";
 @Service()
 export class PostService extends BaseService {
 
-    constructor(postRepository: PostRepository) {
-        super(postRepository);
+    constructor(repository: PostRepository) {
+        super(repository);
     }
 
 }
