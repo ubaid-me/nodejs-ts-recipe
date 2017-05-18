@@ -1,4 +1,4 @@
-# routing-controllers with koa demo
+# NodeJS + DI + Controller + Service + Repository Example
 
 1. Install all dependencies:
 
