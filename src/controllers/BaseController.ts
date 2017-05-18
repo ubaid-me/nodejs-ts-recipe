@@ -2,34 +2,29 @@ import {JsonController, Get, Post as HttpPost, Param, Delete, Body} from "routin
 import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {PostService} from "../services/PostService";
-import {BaseController} from "./BaseController";
+import {BaseService} from "../services/BaseService";
 
 @Service()
 @JsonController()
-export class PostController extends BaseController{
+export class BaseController {
 
-    constructor(postService: PostService) {
-        super(postService);
+    constructor(private service: BaseService) {
     }
 
-    @Get("/posts")
     all(): Promise<Post[]> {
-        return super.all();
+        return this.service.findAll();
     }
 
-    @Get("/posts/:id")
     one(@Param("id") id: number): Post {
-        return super.one(id);
+        return this.service.findOne(id);
     }
 
-    @HttpPost("/posts")
     post(@Body() post: Post): Post {
-        return super.post(post);
+        return this.service.save(post);
     }
 
-    @Delete("/posts/:id")
     delete(@Param("id") id: number): Post {
-        return super.delete(id);
+        return this.service.remove(id);
     }
 
 }
