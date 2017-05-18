@@ -6,7 +6,6 @@ import {Container} from "typedi";
 useContainer(Container);
 
 // now import all our controllers. alternatively you can specify controllerDirs in routing-controller options
-import "./controllers/CategoryController";
 import "./controllers/PostController";
 
 // create koa server

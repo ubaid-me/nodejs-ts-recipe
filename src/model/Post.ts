@@ -1,8 +1,8 @@
 import {Category} from "./Category";
+import {BaseModel} from "./BaseModel";
 
-export class Post {
+export class Post extends BaseModel{
 
-    id: number;
     title: string;
     text: string;
     createDate: Date = new Date();
@@ -12,7 +12,7 @@ export class Post {
                 title: string,
                 text: string,
                 categories: Category[]) {
-        this.id = id;
+        super(id);
         this.title = title;
         this.text = text;
         this.categories = categories;

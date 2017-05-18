@@ -1,10 +1,10 @@
-export class Category {
+import {BaseModel} from "./BaseModel";
+export class Category extends BaseModel{
 
-    id: number;
     name: string;
 
     constructor(id: number, name: string) {
-        this.id = id;
+        super(id);
         this.name = name;
     }
 
