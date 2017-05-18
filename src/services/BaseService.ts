@@ -2,11 +2,12 @@ import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {Category} from "../model/Category";
 import {PostRepository} from "../repository/PostRepository";
+import {BaseRepository} from "../repository/BaseRepository";
 
 @Service()
 export class BaseService {
 
-    constructor(private repository: PostRepository) {
+    constructor(private repository: BaseRepository) {
     }
 
     findAll() {
