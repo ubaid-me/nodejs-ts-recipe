@@ -3,6 +3,7 @@ import {Post} from "../model/Post";
 import {Category} from "../model/Category";
 import {PostRepository} from "../repository/PostRepository";
 import {BaseRepository} from "../repository/BaseRepository";
+import {BaseModel} from "../model/BaseModel";
 
 @Service()
 export class BaseService {
@@ -14,7 +15,7 @@ export class BaseService {
         return this.repository.findAll();
     }
 
-    findOne(id: number) {
+    findOne(id: number) : BaseModel {
         return this.repository.findOne(id);
     }
 

@@ -3,6 +3,7 @@ import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {PostService} from "../services/PostService";
 import {BaseController} from "./BaseController";
+import {BaseModel} from "../model/BaseModel";
 
 @Service()
 @JsonController()
@@ -18,7 +19,7 @@ export class PostController extends BaseController{
     }
 
     @Get("/posts/:id")
-    one(@Param("id") id: number): Post {
+    one(@Param("id") id: number) {
         return super.one(id);
     }
 

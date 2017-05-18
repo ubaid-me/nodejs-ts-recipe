@@ -1,6 +1,7 @@
 import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {Category} from "../model/Category";
+import {BaseModel} from "../model/BaseModel";
 
 @Service()
 export class BaseRepository {
@@ -17,10 +18,10 @@ export class BaseRepository {
     findOne(id: number) {
         // here, for example you can load post id using mongoose
         // you can also return a promise here
-        let foundPost: Post = undefined;
+        let foundPost: BaseModel = undefined;
         this.dataList.forEach(post => {
             if (post.id === id)
-                foundPost = post;
+                foundPost = <BaseModel> post;
         });
         return foundPost;
     }
@@ -33,7 +34,7 @@ export class BaseRepository {
 
     remove(id: number) {
         // here, for example you can save a post to mongodb using mongoose
-        const post = this.findOne(id);
+        const post = <Post> this.findOne(id);
         if (post)
             this.dataList.splice(this.dataList.indexOf(post), 1);
 

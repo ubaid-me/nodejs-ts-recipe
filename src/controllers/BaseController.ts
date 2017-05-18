@@ -3,6 +3,7 @@ import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {PostService} from "../services/PostService";
 import {BaseService} from "../services/BaseService";
+import {BaseModel} from "../model/BaseModel";
 
 @Service()
 @JsonController()
@@ -15,7 +16,7 @@ export class BaseController {
         return this.service.findAll();
     }
 
-    one(@Param("id") id: number): Post {
+    one(@Param("id") id: number) {
         return this.service.findOne(id);
     }
 
