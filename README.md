@@ -25,3 +25,8 @@ Inspired from:
 
 This project targets ES6. 
 You can target ES5, but you'll need to use es6-shim and install its typings.
+
+### TODOs
+
+- add testing framework / support
+- add config file support
