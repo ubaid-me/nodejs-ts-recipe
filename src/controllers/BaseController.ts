@@ -1,9 +1,9 @@
 import {JsonController, Get, Post as HttpPost, Param, Delete, Body} from "routing-controllers";
 import {Service} from "typedi";
-import {Post} from "../model/Post";
-import {PostService} from "../services/PostService";
-import {BaseService} from "../services/BaseService";
-import {BaseModel} from "../model/BaseModel";
+import {Post} from "../lib/model/Post";
+import {PostService} from "../lib/services/PostService";
+import {BaseService} from "../lib/services/BaseService";
+import {BaseModel} from "../lib/model/BaseModel";
 
 @Service()
 @JsonController()

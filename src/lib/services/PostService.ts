@@ -2,7 +2,7 @@ import {Service} from "typedi";
 import {Post} from "../model/Post";
 import {Category} from "../model/Category";
 import {PostRepository} from "../repository/PostRepository";
-import {BaseService} from "../services/BaseService";
+import {BaseService} from "./BaseService";
 
 @Service()
 export class PostService extends BaseService {
