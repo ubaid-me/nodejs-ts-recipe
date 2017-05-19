@@ -6,7 +6,7 @@ import {Container} from "typedi";
 useContainer(Container);
 
 // now import all our controllers. alternatively you can specify controllerDirs in routing-controller options
-import "./controllers/PostController";
+import "./api/controllers/PostController";
 
 // create koa server
 const koaApp = createKoaServer({ // alternatively you can use useKoaServer with your own preconfigured koa server
