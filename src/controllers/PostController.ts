@@ -24,12 +24,12 @@ export class PostController extends BaseController{
     }
 
     @HttpPost("/posts")
-    post(@Body() post: Post): Post {
+    post(@Body() post: BaseModel) {
         return super.post(post);
     }
 
     @Delete("/posts/:id")
-    delete(@Param("id") id: number): Post {
+    delete(@Param("id") id: number) {
         return super.delete(id);
     }
 

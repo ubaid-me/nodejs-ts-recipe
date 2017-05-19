@@ -20,11 +20,11 @@ export class BaseController {
         return this.service.findOne(id);
     }
 
-    post(@Body() post: Post): Post {
-        return this.service.save(post);
+    post(@Body() model: BaseModel) {
+        return this.service.save(model);
     }
 
-    delete(@Param("id") id: number): Post {
+    delete(@Param("id") id: number): BaseModel {
         return this.service.remove(id);
     }
 

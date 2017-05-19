@@ -26,15 +26,15 @@ export class BaseRepository {
         return foundPost;
     }
 
-    save(post: Post) {
+    save(model: BaseModel) {
         // here, for example you can save a post to mongodb using mongoose
-        this.dataList.push(post);
-        return post;
+        this.dataList.push(model);
+        return <BaseModel> model;
     }
 
     remove(id: number) {
         // here, for example you can save a post to mongodb using mongoose
-        const post = <Post> this.findOne(id);
+        const post = <BaseModel> this.findOne(id);
         if (post)
             this.dataList.splice(this.dataList.indexOf(post), 1);
 

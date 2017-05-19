@@ -19,8 +19,8 @@ export class BaseService {
         return this.repository.findOne(id);
     }
 
-    save(post: Post) {
-        return this.repository.save(post);
+    save(model: BaseModel) : BaseModel {
+        return this.repository.save(model);
     }
 
     remove(id: number) {
