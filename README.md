@@ -28,5 +28,6 @@ You can target ES5, but you'll need to use es6-shim and install its typings.
 
 ### TODOs
 
+- introduce context layer (request | response)
 - add testing framework / support
 - add config file support
