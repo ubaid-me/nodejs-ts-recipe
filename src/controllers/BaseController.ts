@@ -12,7 +12,7 @@ export class BaseController {
     constructor(private service: BaseService) {
     }
 
-    all(): Promise<Post[]> {
+    all(): Promise<BaseModel[]> {
         return this.service.findAll();
     }
 
