@@ -1,5 +1,10 @@
 # NodeJS + Typescript + DI + Controller + Service + Repository Example
 
+Inspired from:
+- https://github.com/pleerock/routing-controllers-koa-demo
+- https://github.com/mohuk/koa2-ts-init
+- https://www.nuget.org/packages/Recipe.Core/
+
 1. Install all dependencies:
 
     `npm install`
