@@ -1,25 +1,25 @@
 {
-  "name": "routing-controllers-koa-demo",
+  "name": "nodejs-ts-recipe",
   "private": true,
   "version": "0.0.2",
-  "description": "Example of koa + typescript project using routing-controllers",
+  "description": "NodeJS + Typescript + DI + Controller + Service + Repository Example",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/routing-controllers-koa-demo.git"
+    "url": "https://github.com/ubaidurrehman-10p/nodejs-ts-recipe.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/routing-controllers-koa-demo/issues"
+    "url": "https://github.com/ubaidurrehman-10p/nodejs-ts-recipe/issues"
   },
   "tags": [
     "koa",
     "typescript-koa",
-    "routing-controllers"
+    "routing-controllers",
+    "dependency injection",
+    "nodejs",
+    "services",
+    "repositories"
   ],
   "dependencies": {
     "koa": "^2.0.0-alpha.4",
