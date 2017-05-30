@@ -5,6 +5,9 @@
   "description": "NodeJS + Typescript + DI + Controller + Service + Repository Example",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "scripts": {
+    "start": "ts-node src/app.ts"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com/ubaidurrehman-10p/nodejs-ts-recipe.git"
@@ -27,6 +30,7 @@
     "koa-router": "^7.0.1",
     "reflect-metadata": "^0.1.3",
     "routing-controllers": "^0.6.3",
+    "ts-node": "^3.0.4",
     "typedi": "^0.4.2"
   },
   "devDependencies": {
