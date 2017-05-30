@@ -30,6 +30,6 @@
     "typedi": "^0.4.2"
   },
   "devDependencies": {
-    "typescript": "^1.8.10"
+    "typescript": "^2.3.3"
   }
 }
