@@ -9,13 +9,9 @@ Inspired from:
 
     `npm install`
     
-2. Compile the project:
-
-    `tsc`
-
 2. Run the project:
 
-    `node ./build/app.js`
+    `npm start`
     
 3. Open in browser:
  
